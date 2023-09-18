@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 const fullName = 'Derek Christensen'
 const currentYear = new Date().getFullYear()
-const profilePicture = './images/profile.jpg'
+const profilePicture = './images/profile.JPG'
 
 
 /* Step 3 - Element Variables */
