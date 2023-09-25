@@ -37,3 +37,5 @@ foodElement.innerHTML += `<br> ${favoriteFoods}`
 
 favoriteFoods.splice(-1, 1)
 foodElement.innerHTML += `<br> ${favoriteFoods}`
+
+const ward = `<strong>Home Ward</strong>: ${homeWard}`;
