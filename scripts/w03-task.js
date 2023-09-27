@@ -65,17 +65,24 @@ document
 
 /* Decision Structure */
 let date = new Date();
-let year = new Date().getFullYear();
+let year;
+year = date.getFullYear();
+
 document.getElementById("year").textContent = year;
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 let numbersArray = [...Array(13).keys()].map((x) => x + 1);
+
+// this works too
+// let numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+
 document.getElementById("array").innerHTML = numbersArray;
 
 /* Output Odds Only Array */
 document.getElementById("odds").innerHTML = numbersArray.filter(
-  (x) => x % 2 !== 0
+  (x) => x % 2 === 1
 );
 
 /* Output Evens Only Array */
