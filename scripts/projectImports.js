@@ -82,9 +82,9 @@ export function pElementFit() {
     if (p.classList.value.includes("atomicNumber")) {
       let width = Number(getComputedStyle(p.parentElement).width.slice(0, -2));
       let fontSize = width / 4;
-      p.style.fontSize = fontSize + "px";
-      p.style.left = fontSize * 0.1 + "px";
-      p.style.top = fontSize * 0.1 + "px";
+      p.style.fontSize = `${fontSize}px`;
+      p.style.left = `${fontSize * 0.1}px`;
+      p.style.top = `${fontSize * 0.1}px`;
     } else if (p.classList.value.includes("elementSymbol")) {
       let width = Number(getComputedStyle(p.parentElement).width.slice(0, -2));
       p.style.fontSize = `${width / 2}px`;
@@ -96,8 +96,8 @@ export function pElementFit() {
       p.style.fontSize = `${width * 0.05}px`;
 
       let div = p.previousElementSibling;
-      div.style.width = `${width * 0.05}px`
-      div.style.height = `${width * 0.05}px`
+      div.style.width = `${width * 0.05}px`;
+      div.style.height = `${width * 0.05}px`;
     } else {
       let width = Number(getComputedStyle(p.parentElement).width.slice(0, -2));
       if (p.classList.value.includes("symbol")) {

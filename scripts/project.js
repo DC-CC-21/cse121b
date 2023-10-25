@@ -1,4 +1,9 @@
-import { createElementDetails, createElementCard ,pElementFit, buildLegend} from "./projectImports.js";
+import {
+  createElementDetails,
+  createElementCard,
+  pElementFit,
+  buildLegend,
+} from "./projectImports.js";
 
 String.prototype.toTitleCase = function () {
   return this.replaceAll("_", " ")
@@ -33,9 +38,8 @@ fetchData();
 function createElements(lst) {
   lst.forEach((lst) => createElementCard(lst, molecules, elementsContainer));
   Object.keys(molecules.colors).sort().forEach(fillSelect);
-  buildLegend(lst, molecules, elementsContainer)
-  pElementFit()
-
+  buildLegend(lst, molecules, elementsContainer);
+  pElementFit();
 }
 
 function fillSelect(category) {
@@ -81,5 +85,4 @@ elementsContainer.addEventListener("click", (e) => {
   }
 });
 
-
-window.onresize = pElementFit
+window.onresize = pElementFit;
