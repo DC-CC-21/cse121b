@@ -57,12 +57,14 @@ selectMenu.addEventListener("change", () => {
   let children = Array.from(elementsContainer.children);
 
   children.forEach((child) => {
-    child.classList.remove("notPicked");
-    if (
-      !child.classList.value.split(" ").includes(selected) &&
-      selected !== "all"
-    ) {
-      child.classList.add("notPicked");
+    if (child.id !== "legend") {
+      child.classList.remove("notPicked");
+      if (
+        !child.classList.value.split(" ").includes(selected) &&
+        selected !== "all"
+      ) {
+        child.classList.add("notPicked");
+      }
     }
   });
 });
