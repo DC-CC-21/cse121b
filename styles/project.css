@@ -39,10 +39,10 @@ p {
   border-radius: 5px;
 }
 
-#elementsTable div:hover {
+#elementsTable div.element:hover {
   filter: brightness(150%);
 }
-#elementsTable div:active {
+#elementsTable div.element:active {
   filter: brightness(85%);
 }
 
